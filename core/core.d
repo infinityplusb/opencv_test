@@ -1,9 +1,14 @@
-module opencv_test.core.core.d;
+module opencv_test.core.core;
 
-import core.types_c ;
-import core.version_ ;
-import core.core_c ;
-import core.cvstd ;
+import opencv_test.core.types_c ;
+import opencv_test.core.version_ ;
+import opencv_test.core.core_c ;
+import opencv_test.core.cvstd ;
+import opencv_test.core.traits ;
+import opencv_test.core.matx ;
+import opencv_test.core.types ;
+import opencv_test.core.mat ;
+import opencv_test.core.persistence ;
 
 modmap (C++) "core.hpp";
 
