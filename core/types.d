@@ -1,3 +1,4 @@
-module opencv_test.core.types ;
+module types ;
 
-modmap (C++) "/usr/local/include/opencv2/core/types.hpp" ;
+pragma (cppmap, "/usr/local/include/opencv2/core/types.hpp")
+import (C++) cv._;

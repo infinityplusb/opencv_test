@@ -1,4 +1,5 @@
-module opencv_test.core.version_;
+module version_;
 
-modmap (C++) "/usr/local/include/opencv2/core/version.hpp";
+pragma (cppmap, "/usr/local/include/opencv2/core/version.hpp")
 
+import (C++) cv._;

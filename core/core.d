@@ -1,16 +1,17 @@
-module opencv_test.core.core;
+module corex;
 
-import opencv_test.core.types_c ;
-import opencv_test.core.version_ ;
-import opencv_test.core.core_c ;
-import opencv_test.core.cvstd ;
-import opencv_test.core.traits ;
-import opencv_test.core.matx ;
-import opencv_test.core.types ;
-import opencv_test.core.mat ;
-import opencv_test.core.persistence ;
+import types_c ;
+import version_ ;
+import core_c ;
+import cvstd ;
+import traits ;
+import matx ;
+import types ;
+import mat ;
+import persistence ;
 
-modmap (C++) "core.hpp";
+// modmap (C++) "core.hpp";
+pragma (cppmap, "core.hpp")
 
 import (C++) cv._;
 import (C++) cv.Size_;
@@ -18,6 +19,7 @@ import (C++) cv.Point_;
 import (C++) cv.Rect_;
 import (C++) cv.Vec;
 import (C++) cv.Matx;
+// import (C++) cv._Tp;
 
 // typedef std::string String;
 

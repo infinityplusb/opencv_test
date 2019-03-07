@@ -1,6 +1,6 @@
-module opencv_test.core.cvstd;
+module cvstd;
 
-modmap (C++) "/usr/local/include/opencv2/core/cvstd.hpp" ;
+pragma (cppmap, "/usr/local/include/opencv2/core/cvstd.hpp")
 
 import (C++) cv._ ;
 // import (C++) detail._ ;

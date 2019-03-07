@@ -1,7 +1,8 @@
-module opencv_test.core.core_c;
+module core_c;
 
-import opencv_test.core.types_c ;
+import types_c ;
 
-modmap (C++) "/usr/local/include/opencv2/core/core_c.h";
+// modmap (C++) "/usr/local/include/opencv2/core/core_c.h";
+pragma (cppmap, "/usr/local/include/opencv2/core/core_c.h")
 
 import (C++) _ : cvCreateImageHeader;

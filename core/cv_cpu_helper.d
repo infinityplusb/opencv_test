@@ -1,3 +1,5 @@
-module opencv_test.core.cv_cpu_helper ;
+module cv_cpu_helper ;
 
-modmap (C++) "/usr/local/include/opencv2/core/cv_cpu_helper.h";
+pragma (cppmap, "/usr/local/include/opencv2/core/cv_cpu_helper.h")
+
+import (C++) cv._;

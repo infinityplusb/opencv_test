@@ -1,10 +1,10 @@
-module opencv_test.core.mat ;
+module mat ;
 
-import opencv_test.core.matx ;
-import opencv_test.core.types ;
+import matx ;
+import types ;
 
-import opencv_test.core.bufferpool ;
+import bufferpool ;
 
-modmap (C++) "/usr/local/include/opencv2/core/mat.hpp" ;
+pragma (cppmap, "/usr/local/include/opencv2/core/mat.hpp")
 
 import (C++) cv._;

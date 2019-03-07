@@ -1,5 +1,6 @@
-module opencv_test.core.traits ;
+module traits ;
 
-import opencv_test.core.cvdef ;
+import cvdef ;
 
-modmap (C++) "/usr/local/include/opencv2/core/traits.hpp" ;
+pragma (cppmap, "/usr/local/include/opencv2/core/traits.hpp")
+import (C++) cv._;

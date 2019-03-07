@@ -1,8 +1,8 @@
-module opencv_test.core.persistence ;
+module persistence ;
 
-import opencv_test.core.types ;
-import opencv_test.core.mat ;
+import types ;
+import mat ;
 
-modmap (C++) "/usr/local/include/opencv2/core/persistence.hpp" ;
+pragma (cppmap, "/usr/local/include/opencv2/core/persistence.hpp")
 
 import (C++) cv._ ;

@@ -1,8 +1,9 @@
-module opencv_test.core.base ;
+module base;
 
-import opencv_test.core.cvdef ;
-import opencv_test.core.cvstd ;
+import cvdef ;
+import cvstd ;
 
-modmap (C++) "/usr/local/include/opencv2/core/base.hpp" ;
+pragma (cppmap, "core.hpp")
+//modmap (C++) "/usr/local/include/opencv2/core/base.hpp" ;
 
 import (C++) cv._ ;

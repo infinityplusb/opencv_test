@@ -1,7 +1,8 @@
-module opencv_test.core.cvdef;
+module cvdef;
 
-import opencv_test.core.hal_interface ;
-import opencv_test.core.cv_cpu_dispatch ;
+import hal_interface ;
+import cv_cpu_dispatch ;
 
-modmap (C++) "/usr/local/include/opencv2/core/cvdef.h" ;
+pragma (cppmap, "/usr/local/include/opencv2/core/cvdef.h")
 
+import (C++) cv._;

@@ -1,8 +1,8 @@
-module opencv_test.core.types_c;
+module types_c;
 
-import opencv_test.core.cvstd ;
+import cvstd ;
 
-modmap (C++) "/usr/local/include/opencv2/core/types_c.h";
+pragma (cppmap, "/usr/local/include/opencv2/core/types_c.h")
 
 import (C++) _IplImage ;
 alias _IplImage IplImage ;
@@ -67,4 +67,3 @@ alias CvArr CvArr;
 //     import (C++) IplImage ;
 //     IplImage x;
 // }
-

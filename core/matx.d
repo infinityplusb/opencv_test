@@ -1,3 +1,4 @@
-module opencv_test.core.matx ;
+module matx ;
 
-modmap (C++) "/usr/local/include/opencv2/core/matx.hpp" ;
+pragma (cppmap, "/usr/local/include/opencv2/core/matx.hpp")
+import (C++) cv._;
